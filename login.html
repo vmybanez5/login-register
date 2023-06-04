@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-box">
+            <img src="./images/Authentication-rafiki.png" alt="">
+        </div>
+        <div class="right-box">
+            <div class="content">
+                <h2>Hello Again!</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur 
+                </p>
+
+                <form action="login.php" method="POST" enctype="application/x-www-form-urlencoded">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pword">Password</label>
+                        <input type="password" name="pword" id="pword" required>
+                    </div>
+                    <p class="forgot-pword">
+                        <a href="#">Forgot Password?</a>
+                    </p>
+                    <button>Login</button>
+                    <p class="no-account">
+                        Don't have an account yet? <a href="register.html">Register</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

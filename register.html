@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-box">
+            <img src="./images/Mobile login-pana.png" alt="">
+        </div>
+        <div class="right-box">
+            <div class="content">
+                <h2>Register</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur
+                </p>
+
+                <form action="login.php" method="POST" enctype="application/x-www-form-urlencoded">
+                    <div class="form-group">
+                        <label for="fname">First Name</label>
+                        <input type="text" name="fname" id="fname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">Last Name</label>
+                        <input type="text" name="lname" id="lname" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Gender</label>
+                        
+                        <div class="radio-group">
+                            <div class="radio">
+                                <input type="radio" name="gender" id="male" checked>
+                                <label for="male">Male</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="gender" id="female">
+                                <label for="female">Female</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="course">Course</label>
+                        <select name="course" id="course">
+                            <option value="bscs">Bachelor of Science in Computer Science</option>
+                            <option value="bsit">Bachelor of Science in Information Technology</option>
+                            <option value="bsis">Bachelor of Science in Information Systems</option>
+                            
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="bio">Bio</label>
+                        <textarea name="bio" id="bio" placeholder="About me"></textarea>
+                    </div>
+                    <button>Register</button>
+                    <p class="no-account">
+                        Already have an account yet? <a href="login.html">Login</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

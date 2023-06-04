@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px/1.5 Roboto, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+}
+
+.left-box,
+.right-box {
+  flex: 1;
+  min-height: 100%;
+}
+
+.left-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-color: blue;
+  border-radius: 10px;
+}
+
+.left-box img {
+  object-fit: cover;
+}
+
+/* Right Box */
+.right-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+.right-box h2,
+.right-box p {
+  text-align: center;
+}
+
+.form-group {
+  margin-top: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+  display: block;
+  width: 100%;
+  outline: 0;
+  border: 0.5px solid lightgray;
+  border-radius: 10px;
+  padding: 15px 10px;
+}
+
+input {
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+}
+
+p.forgot-pword {
+  text-align: right;
+  margin-top: 1rem;
+}
+
+p.forgot-pword a,
+p.no-account a {
+  text-decoration: none;
+  color: black;
+}
+
+p.forgot-pword a:hover,
+p.no-account a:hover {
+  text-decoration: underline;
+}
+
+p.no-account {
+  margin-top: 1rem;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+  margin-top: 1rem;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+.radio-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+input[type="radio"] {
+  vertical-align: middle;
+  height: 15px;
+  width: 15px;
+}
+
+.radio-group label {
+  vertical-align: middle;
+}
+
+option {
+  font-size: 1rem;
+}
+
+select {
+  font-size: 1rem;
+}
+
+textarea {
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .left-box {
+    display: none;
+  }
+
+  p.forgot-pword {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 50px 80px;
+  }
+}
